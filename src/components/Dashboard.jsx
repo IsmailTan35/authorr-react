@@ -6,7 +6,7 @@ import EmptyPage from './EmptyPage';
 import Loading from './Loading';
 
 const Dashboard = () => {
-    const [text,setText]= useState("OL26320A")
+    const [text,setText]= useState("")
     const [books,setBooks] = useState([])
     const [loading,setLoading] = useState(false)
     const [authorName,setAuthorName] = useState(null)
@@ -51,7 +51,7 @@ const Dashboard = () => {
                         <span className='header-text'>book of</span>
                         <input 
                             type="text" 
-                            placeholder="Search" 
+                            placeholder="OL26320A" 
                             value={text} 
                             onChange={handleChange}
                             className="search-input"

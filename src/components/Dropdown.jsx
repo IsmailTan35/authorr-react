@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import {ReactComponent as Arrow } from '../assets/img/arrow.svg';
 import {ReactComponent as PagesIcon } from '../assets/img/layer.svg';
 import {ReactComponent as ReaderIcon } from '../assets/img/read.svg';
-
+import "../assets/css/item.css"
 const Dropdown = ({item}) => {
     const [show,setShow] = useState(false)
 

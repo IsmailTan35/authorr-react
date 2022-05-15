@@ -16,7 +16,7 @@ const Card = ({author}) => {
             <div className="card-wrapper">
             <div className="card" style={{borderTop:`5px solid rgb(${createColor()})`}}>
                 <div className="card-header">{author[0] || "data is missing"}</div>
-                    <div class="card-content">
+                    <div className="card-content">
                         {author[1] && author[1].map((item,index) => (
                             <Dropdown item={item} key={index}/>
                         ))}
