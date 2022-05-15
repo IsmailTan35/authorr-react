@@ -19,7 +19,6 @@ const Dashboard = () => {
         });
         return arr
     };
-    //js custom create color fresh with index
 
     const handleSubmit = (e) => {
         e.preventDefault();

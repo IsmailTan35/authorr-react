@@ -13,12 +13,44 @@
     box-shadow: 0px 0px 10px #D2D7E0;
     border-radius: 5px;
     color: #707090;
-    font-family: Roboto;
     display: flex;
     flex-direction: column;
     row-gap: 20px;
     padding: 10px;
     box-sizing: border-box;
+    max-height: 100%;
+}
+
+.card-content{
+    overflow-y:scroll;
+    display:flex;
+    flex-direction:column;
+    row-gap:10px;
+    padding-right:3px
+}
+
+.card-content::-webkit-scrollbar {
+    width: 4px;
+    background-color: #e1e4e7;
+    border-radius: 5px;
+}
+
+.card-content::-webkit-scrollbar-thumb:hover{
+    background-color: red;
+    cursor: auto;
+}
+
+.card-content::-webkit-scrollbar-thumb{
+    background: #202225;
+    border-radius: 10px;
+}
+
+.card-content::-webkit-scrollbar-thumb:hover {
+    background-color: #424242;
+}
+  
+.card-content::-webkit-scrollbar-track {
+    background-color: transparent;
 }
 
 .item{
@@ -45,6 +77,14 @@
     cursor: pointer;
 }
 
+.item-header-text{
+    overflow: hidden;
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  	width:250px;
+}
+
 .item-body,.item-body-active{
     transition: ease-in-out 0.5s;
     overflow: hidden;
@@ -57,7 +97,7 @@
 }
 
 .item-body-active{
-    height: 140px;
+    height: 110px;
 
 }
 
@@ -78,7 +118,6 @@
     align-items: center;
     width: 100%;
     height: 60px;
-    column-gap: 10px;
 }
 
 .item-footer > div{

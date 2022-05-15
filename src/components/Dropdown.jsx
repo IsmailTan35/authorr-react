@@ -10,7 +10,7 @@ const Dropdown = ({item}) => {
         <>
             <div className="item">
                 <div className="item-header" onClick={()=>{setShow(!show)}}>
-                    <div>
+                    <div className='item-header-text'>
                         {item.title || "data is missing"}
                     </div>
                     <div  className={`header-icon${show ? "-active":""}`}>
@@ -33,7 +33,7 @@ const Dropdown = ({item}) => {
                         </div>
                         <div>
                             <ReaderIcon/>
-                            <div>32 hours read time</div>
+                            <div>{(item.number_of_pages_median*3/60).toFixed(0)} hours read time</div>
                         </div>
                     </div>
                 </div>

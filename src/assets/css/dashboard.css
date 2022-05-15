@@ -1,5 +1,6 @@
 .dashboard{
     flex: 1 1 200px;
+    max-height: calc(100vh - 90px);
 }
 
 .dashboard2{
@@ -41,15 +42,14 @@
     justify-content: space-between;
     column-gap: 20px;
     width: 100%;
-    overflow-x: scroll;
     padding: 20px;
+    overflow-x: scroll;
     flex: 1 0;
 }
 
 .dashboard-panel::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
-    background-color: #ccc;
+    height: 5px;
+    background-color: #eee;
     border-radius: 5px;
 }
 

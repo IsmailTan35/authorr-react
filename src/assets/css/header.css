@@ -17,6 +17,10 @@
     align-items: center;
 }
 
+.header-icon{
+    transform: rotate(-90deg);
+
+}
 .header-icon-active{
-    transform: rotate(180deg);
+    transform: rotate(360deg);
 }
