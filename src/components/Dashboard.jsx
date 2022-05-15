@@ -24,7 +24,7 @@ const Dashboard = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         setLoading(true)
-        axios.get(`http://openlibrary.org/search.json?language=eng&author=${text}`)
+        axios.get(`https://openlibrary.org/search.json?language=eng&author=${text}`)
             .then(res => {
                 const rawData = res.data.docs;
                 const groupData = groupBy(rawData, "publish_year")
