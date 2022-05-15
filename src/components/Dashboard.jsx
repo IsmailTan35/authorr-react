@@ -6,7 +6,7 @@ import EmptyPage from './EmptyPage';
 import Loading from './Loading';
 
 const Dashboard = () => {
-    const [text,setText]= useState("")
+    const [text,setText]= useState("OL26320A")
     const [books,setBooks] = useState([])
     const [loading,setLoading] = useState(false)
     const [authorName,setAuthorName] = useState(null)
@@ -47,7 +47,7 @@ const Dashboard = () => {
             <div className="dashboard">
                 <div className="dashboard2">
                     <div className="dashboard-header">
-                        <span className='author-name'>{authorName || "Author Name"}</span>
+                        <span className='author-name'>{authorName || ""}</span>
                         <span className='header-text'>book of</span>
                         <input 
                             type="text" 
