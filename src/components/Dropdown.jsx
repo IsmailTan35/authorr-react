@@ -33,7 +33,7 @@ const Dropdown = ({item}) => {
                         </div>
                         <div>
                             <ReaderIcon/>
-                            <div>{(item.number_of_pages_median*3/60).toFixed(0)} hours read time</div>
+                            <div>{(item.number_of_pages_median*3/60).toFixed(0) || "Data is missing"} hours read time</div>
                         </div>
                     </div>
                 </div>

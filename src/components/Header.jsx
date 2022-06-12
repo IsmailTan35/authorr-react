@@ -6,7 +6,6 @@ const Header = () => {
     return (
         <>
             <div className="header">
-                <Logo style={{width:135,height:40}}/>
             </div>
         </>
     );
